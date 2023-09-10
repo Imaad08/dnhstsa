@@ -5,63 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TSA Club - Del Norte High School</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body,
-    h1,
-    p {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      color: #333;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    header {
-      background-color: #0073e6;
-      color: white;
-    }
-
-    header h1 {
-      margin: 0;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    nav ul {
-      list-style: none;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-
-    nav ul li:last-child {
-      margin-right: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: white;
-    }
-
     section#hero {
-      /* background-image: url('your-image.jpg');*/
+      /* background-image: url('image.png');*/
       background-size: cover;
       background-position: center;
       color: white;
       text-align: center;
-      padding: 100px 0;
+      padding: 10px 0;
     }
 
     section#hero h2 {
@@ -89,14 +41,6 @@
       background-color: #005cbf;
     }
 
-    .btn-top {
-      transition: background-color 0.3s, color 0.3s, transform 0.2s;
-    }
-
-    .btn-top:hover {
-      color: #333;
-      transform: scale(1.1);
-    }
 
     section h2 {
       text-align: center;
@@ -104,11 +48,13 @@
       color: #333;
     }
 
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
+
+
+    .container p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -117,50 +63,73 @@
   <header>
     <nav>
       <div class="container">
-        <h1>TSA Club</h1>
+        <h1>Del Norte Technology Student Association</h1>
+        <div class="mobile-menu-button" onclick="toggleMobileMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <ul>
-          <li><a href="#about" class="btn btn-top">About Us</a></li>
+          <li><a href="index.html" class="btn btn-top">Home</a></li>
           <li><a href="our-team.html" class="btn btn-top">Our Team</a></li>
           <li><a href="contact-us.html" class="btn btn-top">Contact Us</a></li>
         </ul>
       </div>
+      <ul class="mobile-menu" id="mobileMenu">
+        <li><a href="index.html" class="btn btn-top">Home</a></li>
+        <li><a href="our-team.html" class="btn btn-top">Our Team</a></li>
+        <li><a href="contact-us.html" class="btn btn-top">Contact Us</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section id="hero">
-    <div class="container">
-      <h2>Del Norte High School TSA Club</h2>
-      <p>Quick Intro</p>
-      <a href="#about" class="learn-more">Learn More</a>
-    </div>
-  </section>
+  <div class="page-content">
+    <section id="hero">
+      <div class="container">
+        <h2>Del Norte High School TSA Club</h2>
+        <p>Quick Intro</p>
+        <a href="#about" class="learn-more">Learn More</a>
+      </div>
+    </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Massa ultricies mi quis hendrerit dolor magna eget est. Amet tellus cras adipiscing enim eu
+          turpis. Pulvinar pellentesque habitant morbi tristique senectus et. Nunc lobortis mattis aliquam faucibus. Sed
+          arcu non odio euismod. Pulvinar mattis nunc sed blandit libero volutpat sed cras. Nisi est sit amet facilisis.
+          Integer vitae justo eget magna fermentum. Morbi tristique senectus et netus. Tincidunt nunc pulvinar sapien et
+          ligula. Lacus sed turpis tincidunt id aliquet risus feugiat in ante. Ut pharetra sit amet aliquam id diam.
+          Viverra suspendisse potenti nullam ac tortor vitae. Integer feugiat scelerisque varius morbi enim nunc
+          faucibus
+          a. Consequat nisl vel pretium lectus quam id leo in vitae. Neque aliquam vestibulum morbi blandit cursus.
+          Blandit cursus risus at ultrices mi tempus imperdiet nulla. Justo nec ultrices dui sapien.
 
-    </div>
-  </section>
+          Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Fermentum odio eu feugiat pretium nibh. Eu
+          turpis egestas pretium aenean pharetra. Nibh venenatis cras sed felis eget velit. Quam id leo in vitae turpis
+          massa sed elementum tempus. Habitasse platea dictumst vestibulum rhoncus est pellentesque. Viverra tellus in
+          hac
+          habitasse platea dictumst vestibulum. Pellentesque dignissim enim sit amet venenatis urna. Donec adipiscing
+          tristique risus nec feugiat. Orci eu lobortis elementum nibh tellus molestie nunc.
 
-  <!-- <section id="events">
-    <div class="container">
-      <h2>Upcoming Events</h2>
-      
-    </div>
-  </section>
+          Non sodales neque sodales ut etiam sit amet nisl. Enim tortor at auctor urna nunc id. Erat pellentesque
+          adipiscing commodo elit at imperdiet dui accumsan sit. Nam libero justo laoreet sit amet cursus. Ornare massa
+          eget egestas purus viverra accumsan in nisl nisi. Feugiat nibh sed pulvinar proin. At lectus urna duis
+          convallis
+          convallis tellus id. Quam vulputate dignissim suspendisse in est ante. Potenti nullam ac tortor vitae purus
+          faucibus ornare suspendisse sed. Tellus mauris a diam maecenas sed enim ut sem. Tempus quam pellentesque nec
+          nam
+          aliquam sem et. Montes nascetur ridiculus mus mauris. Quis enim lobortis scelerisque fermentum dui faucibus in
+          ornare. Aliquam eleifend mi in nulla posuere sollicitudin aliquam.
+        <p>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
+      </div>
+    </section>
+  </div>
 
-    </div>
-  </section> -->
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 TSA Club - Del Norte High School</p>
-    </div>
-  </footer>
+  <script src="script.js"></script>
+  </script>
 </body>
 
 </html>
